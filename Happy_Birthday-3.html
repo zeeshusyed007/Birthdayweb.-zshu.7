@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#050307" />
+    <meta name="description" content="A cinematic, romantic birthday card." />
+    <title>Happy Birthday, ASIFA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <div id="glow-cursor" aria-hidden="true"></div>
+    <div class="hearts-bg" aria-hidden="true"></div>
+    <!-- Password gate (private access) -->
+    <div id="pwGate" class="pw-gate" aria-hidden="false" data-password="MjEtMDk=">
+      <div class="pw-inner">
+        <h2>Private Page</h2>
+        <p>Enter the password to view this page.</p>
+        <input id="pwInput" type="password" placeholder="Enter password" aria-label="Password" />
+        <div class="pw-actions">
+          <button id="pwSubmit" class="btn btn-glow">Unlock</button>
+        </div>
+        <p class="pw-hint">Tip: ask the sender for the password.</p>
+      </div>
+    </div>
+
+    <div id="page">
+      <header class="hero" id="hero">
+        <div class="bg-overlay"></div>
+        <div class="container hero-inner">
+          <h1 class="title">Happy Birthday, ASIFA <span class="emoji">❤️</span></h1>
+          <p class="subtitle">Today is all about celebrating the beautiful person you are.</p>
+          <div class="hero-actions">
+            <button id="startBtn" class="btn btn-glow">Start the Surprise ✨</button>
+            <button id="musicToggle" class="btn btn-ghost">Play Music</button>
+          </div>
+          <div class="scroll-hint">Scroll for more</div>
+        </div>
+      </header>
+
+      <main>
+        <section id="message" class="panel">
+          <div class="wrap">
+            <h2 class="section-title">A Special Message</h2>
+            <p class="message-text">“Happy Birthday to the person who makes my world a little brighter, my days a little happier, and my memories a lot more special. I hope this year brings you endless happiness, beautiful moments, and everything your heart wishes for. You deserve all the love, joy, and wonderful things life has to offer. <span class="emoji">❤️</span>”</p>
+          </div>
+        </section>
+
+        <section id="memories" class="panel">
+          <div class="wrap">
+            <h2 class="section-title">Our Memories</h2>
+            <div class="gallery" id="gallery">
+              <div class="card">
+                <img loading="lazy" src="./1000070727.jpg" alt="It's Uh ❤️" data-index="0">
+                <div class="card-caption">It's Uh ❤️</div>
+              </div>
+              <div class="card">
+                <img loading="lazy" src="./1000070728.jpg" alt="The Expencive Gift" data-index="1">
+                <div class="card-caption">The Expencive Gift</div>
+              </div>
+              <div class="card">
+                <img loading="lazy" src="./Screenshot_20260901_220319_Gallery.jpg" alt="Our Chart ✨" data-index="2">
+                <div class="card-caption">Our Chart ✨</div>
+              </div>
+              <div class="card">
+                <img loading="lazy" src="./Screenshot_20260901_220303_Gallery.jpg" alt="Unforgatable Moment 💖" data-index="3">
+                <div class="card-caption">Unforgatable Moment 💖</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="special" class="panel">
+          <div class="wrap">
+            <h2 class="section-title">Why You're Special</h2>
+            <div class="features">
+              <div class="feature" tabindex="0">
+                <h3>Your Smile <span class="emoji">😊</span></h3>
+                <p class="reveal">Your smile brightens every corner of my day and fills my heart with warmth.</p>
+              </div>
+              <div class="feature" tabindex="0">
+                <h3>Your Kind Heart <span class="emoji">❤️</span></h3>
+                <p class="reveal">Your kindness inspires me and makes the world gentler and more beautiful.</p>
+              </div>
+              <div class="feature" tabindex="0">
+                <h3>Your Beautiful Soul <span class="emoji">✨</span></h3>
+                <p class="reveal">Your soul radiates a light that makes every moment feel sacred.</p>
+              </div>
+              <div class="feature" tabindex="0">
+                <h3>Every Moment With You <span class="emoji">🌙</span></h3>
+                <p class="reveal">Every second with you is a memory I cherish forever.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="surprise" class="panel">
+          <div class="wrap text-center">
+            <h2 class="section-title">A Little Surprise</h2>
+            <button id="openSurprise" class="btn btn-large btn-glow">Open Your Surprise 🎁</button>
+          </div>
+        </section>
+
+        <section id="countdown" class="panel">
+          <div class="wrap countdown-wrap">
+            <h2 class="section-title">Special Date</h2>
+            <div class="date-showcase" aria-label="Birthday date 21-09">
+              <span class="date-outline">21</span>
+              <span class="date-separator">-</span>
+              <span class="date-outline">09</span>
+            </div>
+            <p class="date-caption">The day we celebrate your beautiful life!</p>
+          </div>
+        </section>
+
+        <section id="closing" class="panel">
+          <div class="wrap">
+            <h2 class="section-title">Here’s to Another Year</h2>
+            <p class="closing-text">Here’s to another year of your beautiful journey. Keep smiling, keep shining, and always remember how special you are. Happy Birthday, My Love. <span class="emoji">❤️✨</span></p>
+            <p class="from">With Love, <strong>Zeeshan!</strong></p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container footer-inner">
+          <div class="music-controls">
+            <audio id="bgMusic" src="assets/music/birthday-song.mp3" preload="auto" loop></audio>
+          </div>
+          <div class="credits">Made by @zshu.7</div>
+        </div>
+      </footer>
+
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="close" id="lightboxClose">✕</button>
+        <img id="lightboxImg" src="" alt="">
+        <div class="lightbox-nav">
+          <button id="lbPrev">‹</button>
+          <button id="lbNext">›</button>
+        </div>
+      </div>
+
+      <!-- Surprise Modal -->
+      <div id="surpriseModal" class="modal" aria-hidden="true">
+        <div class="modal-inner">
+          <button class="close modal-close" id="surpriseClose">✕</button>
+          <div class="surprise-content">
+            <h3>Happpyyyy Birthdayyyy Asifa..! 🫶💖</h3>
+            <p id="surpriseText">I didn't forget ur B'Day , I love the same as u did , Enjoy ur Day ! 💖ILYSM: 🥹❤️‍🩹 <span class="emoji">❤️</span></p>
+            <button id="closeAndCelebrate" class="btn btn-glow">Close & Celebrate</button>
+          </div>
+          <canvas id="confetti"></canvas>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

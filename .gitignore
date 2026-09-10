@@ -1,0 +1,10 @@
+# Ignore local screenshots and downloaded media that are not part of the live website
+1000070727.jpg
+1000070728.jpg
+Screenshot_20260901_220303_Gallery.jpg
+Screenshot_20260901_220319_Gallery.jpg
+"vidssave.com Indila - Love Story ( Edit Audio ) 256KBPS.webm"
+
+# Optional: ignore OS/editor junk
+.DS_Store
+Thumbs.db
